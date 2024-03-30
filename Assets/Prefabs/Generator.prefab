@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4247336873590993907
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4247336873590993909}
+  - component: {fileID: 4247336873590993906}
+  - component: {fileID: 221701403552669362}
+  - component: {fileID: 305437761050008891}
+  m_Layer: 0
+  m_Name: Generator
+  m_TagString: Generator
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4247336873590993909
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4247336873590993907}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.512912, y: 0.80963165, z: -8.375203}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4247336873590993906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4247336873590993907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3235bf17ecb82b84892d7393f3b5936c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dungeonName: 
+  dungeonType: 0
+  size: 12
+  _maxChestCount: 0
+  _maxMiniBossCount: 0
+  _maxTrapCount: 0
+  _maxBranchCount: 0
+  _branchChance: 0
+  _bossManager: {fileID: 0}
+  pathLengthToExit: 7
+  branchSizes: {x: 0, y: 0}
+  rooms:
+  - {fileID: 7448408680860046885, guid: 45c6ac1bd0dc544449556a5363d2204b, type: 3}
+  - {fileID: 7091765705594865723, guid: ed97004b4d858244dab6abd042ea292d, type: 3}
+  - {fileID: 9100701912926467415, guid: becd03ecf30eda2498432c5623a055c0, type: 3}
+  entranceIcon: {fileID: 4194399427670815624, guid: 1dad033808a0f0b4ca928c7c7476b379, type: 3}
+  exitIcon: {fileID: 2479146125927000688, guid: c9b811f2ec929cc478d7636dde861ceb, type: 3}
+  chestIcon: {fileID: 8490575873474290199, guid: bab4698ba1c8c224b8658ca5aa06da97, type: 3}
+  regularIcon: {fileID: 3561590977072219448, guid: 545fb6919731a254ca15940097c09339, type: 3}
+  trapIcon: {fileID: 3561590977072219448, guid: c6a333a9dbe9c1546a67a8a1798ea7dc, type: 3}
+  miniBossIcon: {fileID: 7324777953349679130, guid: 93f6171bafda94a449179c6e6507768b, type: 3}
+  bossIcon: {fileID: 5990240967965325080, guid: 02c1ce91972768e48823ecd904c58cbe, type: 3}
+--- !u!114 &221701403552669362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4247336873590993907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c4f938629fa19542abdf3828fd86802, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _grades:
+  - S+
+  - S
+  - A
+  - B
+  - C
+  - D
+  - F
+  _gradeThresholds:
+  - 1000
+  - 900
+  - 800
+  - 600
+  - 400
+  - 200
+  - 0
+  _score: 0
+  _scoreMultiplier: 1
+  _time: 0
+  _roomClearTime: 0
+  _roomClearTimeMax: 0
+--- !u!156049354 &305437761050008891
+Grid:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4247336873590993907}
+  m_Enabled: 1
+  m_CellSize: {x: 1, y: 1, z: 0}
+  m_CellGap: {x: 0, y: 0, z: 0}
+  m_CellLayout: 0
+  m_CellSwizzle: 0
